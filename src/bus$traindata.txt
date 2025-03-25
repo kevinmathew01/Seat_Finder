@@ -1,0 +1,353 @@
+
+const busData = [
+  {
+    "name": "Bus 1",
+    "start": "Kanjirapally",
+    "end": "Thiruvananthapuram",
+    "timing": "06:30",
+    "stations": [
+      "Kanjirapally",
+      "Pala",
+      "Ettumanoor",
+      "Kottayam",
+      "Changanassery",
+      "Thiruvalla",
+      "Chengannur",
+      "Mavelikara",
+      "Kayamkulam",
+      "Kollam",
+      "Thiruvananthapuram"
+    ],
+    "fare": 236
+  },
+  {
+    "name": "Bus 2",
+    "start": "Kanjirapally",
+    "end": "Thiruvananthapuram",
+    "timing": "08:54",
+    "stations": [
+      "Kanjirapally",
+      "Pala",
+      "Ettumanoor",
+      "Kottayam",
+      "Changanassery",
+      "Thiruvalla",
+      "Chengannur",
+      "Mavelikara",
+      "Kayamkulam",
+      "Kollam",
+      "Thiruvananthapuram"
+    ],
+    "fare": 241
+  },
+  {
+    "name": "Bus 3",
+    "start": "Kanjirapally",
+    "end": "Kottayam",
+    "timing": "19:31",
+    "stations": [
+      "Kanjirapally",
+      "Pala",
+      "Ettumanoor",
+      "Kottayam"
+    ],
+    "fare": 196
+  },
+  {
+    "name": "Bus 4",
+    "start": "Kanjirapally",
+    "end": "Thiruvananthapuram",
+    "timing": "10:47",
+    "stations": [
+      "Kanjirapally",
+      "Pala",
+      "Ettumanoor",
+      "Kottayam",
+      "Changanassery",
+      "Thiruvalla",
+      "Chengannur",
+      "Mavelikara",
+      "Kayamkulam",
+      "Kollam",
+      "Thiruvananthapuram"
+    ],
+    "fare": 268
+  },
+  {
+    "name": "Bus 5",
+    "start": "Kanjirapally",
+    "end": "Kottayam",
+    "timing": "12:36",
+    "stations": [
+      "Kanjirapally",
+      "Pala",
+      "Ettumanoor",
+      "Kottayam"
+    ],
+    "fare": 69
+  },
+  {
+    "name": "Bus 6",
+    "start": "Kanjirapally",
+    "end": "Kottayam",
+    "timing": "19:43",
+    "stations": [
+      "Kanjirapally",
+      "Pala",
+      "Ettumanoor",
+      "Kottayam"
+    ],
+    "fare": 164
+  },
+  {
+    "name": "Bus 7",
+    "start": "Kanjirapally",
+    "end": "Kottayam",
+    "timing": "07:18",
+    "stations": [
+      "Kanjirapally",
+      "Pala",
+      "Ettumanoor",
+      "Kottayam"
+    ],
+    "fare": 263
+  },
+  {
+    "name": "Bus 8",
+    "start": "Kanjirapally",
+    "end": "Kottayam",
+    "timing": "20:00",
+    "stations": [
+      "Kanjirapally",
+      "Pala",
+      "Ettumanoor",
+      "Kottayam"
+    ],
+    "fare": 265
+  },
+  {
+    "name": "Bus 9",
+    "start": "Kanjirapally",
+    "end": "Thiruvananthapuram",
+    "timing": "14:50",
+    "stations": [
+      "Kanjirapally",
+      "Pala",
+      "Ettumanoor",
+      "Kottayam",
+      "Changanassery",
+      "Thiruvalla",
+      "Chengannur",
+      "Mavelikara",
+      "Kayamkulam",
+      "Kollam",
+      "Thiruvananthapuram"
+    ],
+    "fare": 236
+  },
+  {
+    "name": "Bus 10",
+    "start": "Kanjirapally",
+    "end": "Thiruvananthapuram",
+    "timing": "06:24",
+    "stations": [
+      "Kanjirapally",
+      "Pala",
+      "Ettumanoor",
+      "Kottayam",
+      "Changanassery",
+      "Thiruvalla",
+      "Chengannur",
+      "Mavelikara",
+      "Kayamkulam",
+      "Kollam",
+      "Thiruvananthapuram"
+    ],
+    "fare": 30
+  }
+];
+
+const trainData = [
+  
+  
+ 
+    {
+      "name": "Train 1",
+      "start": "Kanjirapally",
+      "end": "Thiruvananthapuram",
+      "timing": "19:31",
+      "stations": [
+        "Kanjirapally",
+        "Pala",
+        "Ettumanoor",
+        "Kottayam",
+        "Changanassery",
+        "Thiruvalla",
+        "Chengannur",
+        "Mavelikara",
+        "Kayamkulam",
+        "Kollam",
+        "Thiruvananthapuram"
+      ],
+      "fare": 163
+    },
+    {
+      "name": "Train 2",
+      "start": "Kanjirapally",
+      "end": "Kottayam",
+      "timing": "18:02",
+      "stations": [
+        "Kanjirapally",
+        "Pala",
+        "Ettumanoor",
+        "Kottayam"
+      ],
+      "fare": 390
+    },
+    {
+      "name": "Train 3",
+      "start": "Kanjirapally",
+      "end": "Kottayam",
+      "timing": "10:07",
+      "stations": [
+        "Kanjirapally",
+        "Pala",
+        "Ettumanoor",
+        "Kottayam"
+      ],
+      "fare": 278
+    },
+    {
+      "name": "Train 4",
+      "start": "Kanjirapally",
+      "end": "Thiruvananthapuram",
+      "timing": "19:37",
+      "stations": [
+        "Kanjirapally",
+        "Pala",
+        "Ettumanoor",
+        "Kottayam",
+        "Changanassery",
+        "Thiruvalla",
+        "Chengannur",
+        "Mavelikara",
+        "Kayamkulam",
+        "Kollam",
+        "Thiruvananthapuram"
+      ],
+      "fare": 143
+    },
+    {
+      "name": "Train 5",
+      "start": "Kanjirapally",
+      "end": "Thiruvananthapuram",
+      "timing": "16:56",
+      "stations": [
+        "Kanjirapally",
+        "Pala",
+        "Ettumanoor",
+        "Kottayam",
+        "Changanassery",
+        "Thiruvalla",
+        "Chengannur",
+        "Mavelikara",
+        "Kayamkulam",
+        "Kollam",
+        "Thiruvananthapuram"
+      ],
+      "fare": 420
+    },
+    {
+      "name": "Train 6",
+      "start": "Kanjirapally",
+      "end": "Thiruvananthapuram",
+      "timing": "12:19",
+      "stations": [
+        "Kanjirapally",
+        "Pala",
+        "Ettumanoor",
+        "Kottayam",
+        "Changanassery",
+        "Thiruvalla",
+        "Chengannur",
+        "Mavelikara",
+        "Kayamkulam",
+        "Kollam",
+        "Thiruvananthapuram"
+      ],
+      "fare": 247
+    },
+    {
+      "name": "Train 7",
+      "start": "Kanjirapally",
+      "end": "Kottayam",
+      "timing": "18:11",
+      "stations": [
+        "Kanjirapally",
+        "Pala",
+        "Ettumanoor",
+        "Kottayam"
+      ],
+      "fare": 336
+    },
+    {
+      "name": "Train 8",
+      "start": "Kanjirapally",
+      "end": "Thiruvananthapuram",
+      "timing": "16:02",
+      "stations": [
+        "Kanjirapally",
+        "Pala",
+        "Ettumanoor",
+        "Kottayam",
+        "Changanassery",
+        "Thiruvalla",
+        "Chengannur",
+        "Mavelikara",
+        "Kayamkulam",
+        "Kollam",
+        "Thiruvananthapuram"
+      ],
+      "fare": 204
+    },
+    {
+      "name": "Train 9",
+      "start": "Kanjirapally",
+      "end": "Thiruvananthapuram",
+      "timing": "07:19",
+      "stations": [
+        "Kanjirapally",
+        "Pala",
+        "Ettumanoor",
+        "Kottayam",
+        "Changanassery",
+        "Thiruvalla",
+        "Chengannur",
+        "Mavelikara",
+        "Kayamkulam",
+        "Kollam",
+        "Thiruvananthapuram"
+      ],
+      "fare": 337
+    },
+    {
+      "name": "Train 10",
+      "start": "Kanjirapally",
+      "end": "Thiruvananthapuram",
+      "timing": "13:40",
+      "stations": [
+        "Kanjirapally",
+        "Pala",
+        "Ettumanoor",
+        "Kottayam",
+        "Changanassery",
+        "Thiruvalla",
+        "Chengannur",
+        "Mavelikara",
+        "Kayamkulam",
+        "Kollam",
+        "Thiruvananthapuram"
+      ],
+      "fare": 272
+    }
+  ];
