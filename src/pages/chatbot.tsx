@@ -374,7 +374,7 @@ const trainData = [
             "Kayamkulam",
             "Kollam",
             "Thiruvananthapuram"
-        ],
+        ],gb    
         "fare": 272
     }
 ];
